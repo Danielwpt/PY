@@ -10,11 +10,16 @@ def addition(x, y):
 def subtract(x, y):
     return x - y
 
-arr_methods = [addition, subtract]
+def multiply(x, y):
+    return x * y
 
-choose_operand = int(input("0: Add, 1: Sub = "))
+arr_methods = [addition, subtract, multiply]
+
+choose_operand = int(input("0: Add, 1: Sub, 2: Multiply = "))
 
 if arr_methods[choose_operand] == arr_methods[0]:
     print("Added together: " , addition(get_input_1, get_input_2))
-else:
+elif arr_methods[choose_operand] == arr_methods[1]:
     print("Subs together: ", subtract(get_input_1, get_input_2))
+else:
+    print("Subs together: ", multiply(get_input_1, get_input_2))
