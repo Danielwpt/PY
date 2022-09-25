@@ -12,9 +12,9 @@ def subtract(x, y):
 
 arr_methods = [addition, subtract]
 
-choose_operand = int(input("1: Add, 2: Sub = "))
+choose_operand = int(input("0: Add, 1: Sub = "))
 
-if choose_operand == arr_methods[0]:
+if arr_methods[choose_operand] == arr_methods[0]:
     print("Added together: " , addition(get_input_1, get_input_2))
 else:
     print("Subs together: ", subtract(get_input_1, get_input_2))
