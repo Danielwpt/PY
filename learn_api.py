@@ -1,5 +1,5 @@
 import requests
 
-response = requests.get("https://randomuser.me/api/")
+response = requests.get("https://api.thecatapi.com/v1/breeds/")
 
 print(response.text)
