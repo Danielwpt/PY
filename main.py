@@ -20,11 +20,12 @@ arr_methods = [addition, subtract, multiply, divide]
 
 choose_operand = int(input("0: Add, 1: Sub, 2: Multiply, 3: Divide = "))
 
-if arr_methods[choose_operand] == arr_methods[0]:
-    print("Added together: " , addition(get_input_1, get_input_2))
-elif arr_methods[choose_operand] == arr_methods[1]:
-    print("Subs together: ", subtract(get_input_1, get_input_2))
-elif arr_methods[choose_operand] == arr_methods[2]:
-    print("Multiply together: ", multiply(get_input_1, get_input_2))
-else:
-    print("Divide together: ", divide(get_input_1, get_input_2))
+operators = dict([
+    (1, addition),
+    (2, subtract),
+    (3, multiply),
+    (4, divide)
+    ])
+
+if choose_operand == 1:
+    operators[1]
